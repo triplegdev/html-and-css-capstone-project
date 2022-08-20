@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #FBFAFA;
+}
+
+.header__hero {
+    background-image: url(../img/spring.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__hero::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+}
+
+.header__hero-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__hero-logo {
+    width: 150px;
+    filter: invert(1);
+    padding: 10px 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FBFAFA;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav a:hover {
+    color: #AAA093;
+}
+
+header h1 {
+    color: #FBFAFA;
+    position: relative;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 800px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+/* Form */
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    color: #333241;
+    /* border: solid 1px #333241; */
+    margin: 0;
+    border-radius: 5px;
+    border: solid 1px #333241;
+}
+
+.form__wrapper {
+    width: 300px;
+}
+
+#name, #email, #comments {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #FBFAFA;
+    box-sizing: border-box;
+    box-shadow: 2px #000;
+}
+
+#name, #email {
+    height: 30px;
+    border: solid 1px #333241
+}
+
+form label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333241;
+}
+
+.form__checkbox-container {
+    margin: 5px 0;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    color: #FBFAFA;
+    text-transform: uppercase;
+    background-color: #333241;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+
+}
+
+.form__button-container {
+    display: flex;
+    justify-content: center;
+}
